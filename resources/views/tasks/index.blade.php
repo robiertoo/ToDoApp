@@ -50,7 +50,7 @@
                     @else
                         <tr>
                             <td><del>{{ $task->name }}</del></td>
-                            <td>{{ date('d/m/Y', strtotime($task->updated_at)) }}</td>
+                            <td>{{ date('d/m/Y H:i:s', strtotime($task->updated_at)) }}</td>
                         </tr>
                     @endif
                 @endforeach
